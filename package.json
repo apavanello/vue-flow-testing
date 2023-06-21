@@ -1,0 +1,27 @@
+{
+  "name": "vue-flow-basic-example",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@vue-flow/background": "latest",
+    "@vue-flow/controls": "latest",
+    "@vue-flow/core": "latest",
+    "@vue-flow/minimap": "latest",
+    "vue": "3.2.45"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.34.1",
+    "@types/node": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4",
+    "vite": "latest"
+  },
+  "keywords": [],
+  "description": ""
+}
