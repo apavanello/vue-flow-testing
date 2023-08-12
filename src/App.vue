@@ -23,7 +23,7 @@ onConnect((params) => {
 <template>
   <div style="height: 100vh">
     <VueFlow v-model="elements" class="vue-flow-basic-example" :default-zoom="1.5" :min-zoom="0.2" :max-zoom="4">
-      <Background style="background-color: red" pattern-color="#aaa" :gap="8" />
+      <Background pattern-color="#aaa" :gap="8" />
 
       <MiniMap />
 
