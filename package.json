@@ -8,9 +8,9 @@
   "dependencies": {
     "@vue-flow/background": "latest",
     "@vue-flow/controls": "latest",
-    "@vue-flow/core": "latest",
+    "@vue-flow/core": "^1.26.0",
     "@vue-flow/minimap": "latest",
-    "vue": "3.2.45"
+    "vue": "^3.3.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.1",
