@@ -8,7 +8,7 @@ const counter = ref(0)
 <template>
   <div class="custom-node">
     <Handle type="target" :position="Position.Top" />
-    <button @click="counter++">Increment</button>
+    <button @click="('/posts')">Posts</button>
     <div v-for="count of counter">{{ count }}</div>
   </div>
 </template>

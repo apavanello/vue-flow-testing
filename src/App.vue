@@ -7,10 +7,10 @@ import { VueFlow, useVueFlow, type Node, type Edge } from '@vue-flow/core'
 import CustomNode from './CustomNode.vue'
 import CustomEdge from './CustomEdge.vue'
 
-const { onConnect, addEdges } = useVueFlow()
+const { onConnect, addEdges, onNodeContextMenu } = useVueFlow()
 
 const nodes = ref<Node[]>([
-  { id: '1', type: 'input', label: 'Node 1', position: { x: 250, y: 5 } },
+  { id: '1', type: 'input', label: 'Node 1', position: { x: 250, y: 5 }, selectable: true},
   { id: '2', type: 'output', label: 'Node 2', position: { x: 100, y: 100 } },
   { id: '3', type: 'custom', label: 'Node 3', position: { x: 400, y: 100 } },
 ])
@@ -22,6 +22,11 @@ const edges = ref<Edge[]>([
 
 onConnect((params) => {
   addEdges([params])
+})
+
+onNodeContextMenu((node) => {
+  console.log(node)
+  console.log("nodes.value")
 })
 </script>
 
@@ -52,3 +57,4 @@ onConnect((params) => {
     </VueFlow>
   </div>
 </template>
+
